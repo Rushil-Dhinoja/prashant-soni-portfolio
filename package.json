@@ -1,0 +1,23 @@
+{
+  "name": "prashant-soni-photography",
+  "version": "1.0.0",
+  "description": "A photography portfolio of mr. prashant soni",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "npm-run-all watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer <css/style.comp.css> css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^6.1.3"
+  }
+}
