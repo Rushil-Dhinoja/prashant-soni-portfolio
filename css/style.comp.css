@@ -85,7 +85,8 @@ body {
     .details {
       grid-row: 2/3;
       justify-self: center;
-      text-align: center; } }
+      text-align: center;
+      align-self: start; } }
   .details__name h1 {
     font-weight: 300;
     font-size: 4.209rem;
