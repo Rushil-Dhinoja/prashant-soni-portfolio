@@ -4,7 +4,7 @@
     grid-template-columns: [full-start]4vw [main-start] repeat(8,[col-start] 1fr [col-end]) [main-end] 4vw[full-end];
     grid-template-rows: 10vh 90vh 35vw repeat(3, min-content);
 
-    @media only screen and (max-width: $x-large) {
+@media only screen and (max-width: $x-large) {
         grid-template-rows: 10vh 90vh 40vw repeat(3, min-content);
     }
     
@@ -17,7 +17,7 @@
     }
 
     @media only screen and (max-width: $x-small) {
-        grid-template-rows: 10vh 120vh min-content 70vw repeat(3, min-content) ;
+        grid-template-rows: 10vh 110vh min-content 70vw repeat(3, min-content) ;
     }
 
     
@@ -34,7 +34,7 @@
 
         @media only screen and (max-width: $x-small) {
             grid-template-columns: 1fr;
-            grid-template-rows: 90vh 30vh;
+            grid-template-rows: 90vh 20vh;
         }
 
     }

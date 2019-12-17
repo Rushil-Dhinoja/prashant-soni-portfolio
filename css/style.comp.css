@@ -450,7 +450,7 @@ body {
       grid-template-rows: 10vh 90vh 50vw repeat(3, min-content); } }
   @media only screen and (max-width: 40.625em) {
     .container {
-      grid-template-rows: 10vh 120vh min-content 70vw repeat(3, min-content); } }
+      grid-template-rows: 10vh 110vh min-content 70vw repeat(3, min-content); } }
   .container .nav-bar {
     grid-column: main-start/main-end; }
   .container .header {
@@ -461,7 +461,7 @@ body {
     @media only screen and (max-width: 40.625em) {
       .container .header {
         grid-template-columns: 1fr;
-        grid-template-rows: 90vh 30vh; } }
+        grid-template-rows: 90vh 20vh; } }
   .container .story-content {
     grid-row: 3/4;
     grid-column: main-start/col-end 4;
