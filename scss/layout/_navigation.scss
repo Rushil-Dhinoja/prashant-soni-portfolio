@@ -1,0 +1,27 @@
+.nav-bar{
+
+    display: flex;
+    align-items: center;
+
+    &__logo{
+        font-size: $large;
+        margin-right: auto;
+        font-weight: 300;
+    }
+
+    &__links{
+         display: flex;
+         align-items: center;   
+    }
+    &__link{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: $font-light;
+        color: $font-light;
+    }
+}

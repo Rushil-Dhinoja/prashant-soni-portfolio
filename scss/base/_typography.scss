@@ -1,0 +1,27 @@
+// NUNITO THIN
+@font-face{
+    font-family: 'nunito';
+    src:url(fonts/Nunito-Light.ttf) format("truetype"),
+        url(fonts/Nunito-Light.woff) format("woff");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+//NUNITO REGULAR
+@font-face{
+    font-family: 'nunito';
+    src:url(fonts/Nunito-Regular.ttf) format("truetype"),
+        url(fonts/Nunito-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+// SACRAMENTO REGULAR
+@font-face{
+    font-family: sacramentoRegular;
+    src:url(fonts/Sacramento-Regular.ttf) format("truetype"),
+        url(fonts/Sacramento-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}

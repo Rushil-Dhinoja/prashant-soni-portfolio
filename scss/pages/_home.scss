@@ -1,0 +1,45 @@
+.container{
+
+    display: grid;
+    grid-template-columns: [full-start]4vw [main-start] repeat(8,[col-start] 1fr [col-end]) [main-end] 4vw[full-end];
+    grid-template-rows: 10vh 90vh 35vw repeat(3, min-content);
+
+    .nav-bar{
+        grid-column: main-start/main-end;
+    }
+    .header{
+        grid-row: 2/3;
+        grid-column: main-start/main-end;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);    
+    }
+    .story-content{
+        grid-row: 3/4;
+        grid-column: main-start/col-end 4;
+        padding-bottom: 3rem;
+    }
+    .story-image{
+        grid-row: 3/4;
+        grid-column: col-end 4/main-end;
+        padding-bottom: 3rem;
+
+    }
+    .gallery{
+        background-color: $font-dark;
+        grid-row: 4/5;
+        grid-column: full-start/full-end;
+    }
+    .get-in-touch{
+        grid-row: 5/6;
+        grid-column: main-start/main-end;
+        padding: 3rem 0;
+    }
+    .footer{
+        padding: 2rem 0;
+        background-color: $back;
+        grid-row: 6/7;
+        grid-column: full-start/full-end;
+        display: flex;
+    }
+
+}

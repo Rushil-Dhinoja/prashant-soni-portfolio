@@ -7,9 +7,12 @@
 @import "base/typography";
 
 // COMPONENTS
-
 // LAYOUTS
-
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/story";
+@import "layout/get-in-touch";
+@import "layout/footer";
 // PAGES
 @import "pages/home";
 
