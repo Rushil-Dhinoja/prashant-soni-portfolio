@@ -1,11 +1,28 @@
 .details{
     align-self: end;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
 
     &>*:not(:last-child){
         margin-bottom: 3rem;
     }
+
+    @media only screen and (max-width: $x-large) {
+        margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $s-medium) {
+        margin-bottom: 8rem;
+    }
+
+    @media only screen and (max-width: $x-small) {
+        grid-row: 2/3;
+        justify-self: center;
+        text-align: center;
+    }
+
+        
+
 
     &__name{
 
@@ -13,6 +30,24 @@
             font-weight: 300;
             font-size: $large;
             letter-spacing: 3px;
+
+            @media only screen and (max-width: $normal) {
+                font-size: $large-12;
+            }
+
+            @media only screen and (max-width: $s-normal) {
+                font-size: $large-11;
+            }
+
+            @media only screen and (max-width: $s-medium) {
+                font-size: $large-7;
+                letter-spacing: 2px;
+            }
+
+            @media only screen and (max-width: $x-small) {
+               font-size: $large-11;
+            }
+
         }
 
     }
@@ -23,6 +58,22 @@
         font-size: $medium;
         font-weight: 300;
         letter-spacing: 3px;
+
+            @media only screen and (max-width: $normal) {
+                font-size: $medium-12;
+            }
+
+            @media only screen and (max-width: $s-normal) {
+                font-size: $medium-11;
+            }
+
+            @media only screen and (max-width: $s-medium) {
+                font-size: $medium-7;
+            }
+
+            @media only screen and (max-width: $x-small) {
+                font-size: $medium-11;
+             }
         }
     }
 
@@ -32,6 +83,23 @@
         font-size: $small;
         font-weight: 300;
         letter-spacing: 2px;
+        
+            @media only screen and (max-width: $normal) {
+                font-size: $small-12;
+            }
+
+            @media only screen and (max-width: $s-normal) {
+                font-size: $small-11;
+            }
+
+            @media only screen and (max-width: $s-medium) {
+                font-size: $small-7;
+            }
+
+            @media only screen and (max-width: $x-small) {
+                font-size: $small-11;
+             }
+
         }
         
     }
@@ -47,6 +115,27 @@
     align-content: center;
     justify-content: center;
     cursor: pointer;
+
+    @media only screen and (min-width: $ex-large) {
+        height: 500px;
+    }
+
+    @media only screen and (min-width: $xx-large) {
+        height: 600px;
+    }
+
+    @media only screen and (max-width: $x-large) {
+        height: 300px;
+    }
+
+    @media only screen and (max-width: $s-medium) {
+        height: 250px;
+    }
+
+    @media only screen and (max-width: $x-small) {
+        height: 350px;
+        grid-row: 1/2;
+    }
 
     &:hover &--left{
         transform: translateY(0);

@@ -2,11 +2,43 @@
 $font-dark: #333333;
 $font-light: #444444;
 $back: #f9f7f6;
+
+
 // Sizes
 
 $large: 4.209rem;
+$large-12: 3.809rem;
+$large-11: 3.409rem;
+$large-7: 3.009rem;
+
 $medium: 3.157rem;
+$medium-12: 2.757rem;
+$medium-11: 2.357rem;
+$medium-7: 1.957rem;
+
 $small: 2.369rem;
+$small-12: 1.969rem;
+$small-11: 1.569rem;
+$small-7: 1.169rem;
+$small-f: 1.369rem;
+$xs-small:1rem;
+
 $text: 1.777rem;
+$text-10: 1.677rem;
+$text-7: 1.577rem;
+
 $h2: 1.5rem;
 $h3: 1.2rem;
+
+// Breakpoints
+
+$xx-large: 120em; //1920px
+$ex-large : 93.75em; //1500px
+$normal: 78.125em;// 1250px
+$s-normal: 71.875em;//1150px
+$x-large: 62.5em;//1000px
+$x-medium: 53.125em;//850px
+$s-medium: 46.875em;//750px
+$x-small: 40.625em;//650px
+$s-small: 31.25em;//500px
+$ss-small: 25em;//400px

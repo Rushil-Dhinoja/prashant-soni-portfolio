@@ -1,18 +1,16 @@
 // ABSTRACTS
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
 // BASE
 @import "base/reset";
 @import "base/typography";
-
-// COMPONENTS
 // LAYOUTS
 @import "layout/navigation";
 @import "layout/header";
 @import "layout/story";
 @import "layout/get-in-touch";
 @import "layout/footer";
+@import "layout/gallery";
 // PAGES
 @import "pages/home";
 

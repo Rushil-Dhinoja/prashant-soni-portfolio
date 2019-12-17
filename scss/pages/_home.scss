@@ -4,6 +4,25 @@
     grid-template-columns: [full-start]4vw [main-start] repeat(8,[col-start] 1fr [col-end]) [main-end] 4vw[full-end];
     grid-template-rows: 10vh 90vh 35vw repeat(3, min-content);
 
+    @media only screen and (max-width: $x-large) {
+        grid-template-rows: 10vh 90vh 40vw repeat(3, min-content);
+    }
+    
+    @media only screen and (max-width: $x-medium) {
+        grid-template-rows: 10vh 90vh 41vw repeat(3, min-content);
+    }
+
+    @media only screen and (max-width: $s-medium) {
+        grid-template-rows: 10vh 90vh 50vw repeat(3, min-content);
+    }
+
+    @media only screen and (max-width: $x-small) {
+        grid-template-rows: 10vh 120vh min-content 70vw repeat(3, min-content) ;
+    }
+
+    
+
+
     .nav-bar{
         grid-column: main-start/main-end;
     }
@@ -11,28 +30,58 @@
         grid-row: 2/3;
         grid-column: main-start/main-end;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);    
+        grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: $x-small) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 90vh 30vh;
+        }
+
     }
     .story-content{
         grid-row: 3/4;
         grid-column: main-start/col-end 4;
-        padding-bottom: 3rem;
+        padding:3rem 0;
+
+        @media only screen and (max-width: $x-small) {
+            grid-column: main-start/main-end;
+            padding: 1rem 0;
+        }
+
     }
     .story-image{
         grid-row: 3/4;
         grid-column: col-end 4/main-end;
-        padding-bottom: 3rem;
+        padding:3rem 0;
 
+        @media only screen and (max-width: $x-small) {
+            grid-row: 4/5;
+            grid-column: main-start/main-end;
+            padding: 2rem 0;
+        }
     }
     .gallery{
-        background-color: $font-dark;
+        background-color: $back;
         grid-row: 4/5;
         grid-column: full-start/full-end;
+        padding: .5rem;
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(9,5vw);
+
+        @media only screen and (max-width: $x-small) {
+            grid-row: 5/6;
+        }
     }
     .get-in-touch{
         grid-row: 5/6;
         grid-column: main-start/main-end;
         padding: 3rem 0;
+
+        @media only screen and (max-width: $x-small) {
+            grid-row: 6/7;
+        }
     }
     .footer{
         padding: 2rem 0;
@@ -40,6 +89,13 @@
         grid-row: 6/7;
         grid-column: full-start/full-end;
         display: flex;
+        @media only screen and (max-width: $x-small) {
+            grid-row: 7/8;
+        }
+
+        @media only screen and (max-width: $s-small) {
+            flex-direction: column;
+        }
     }
 
 }
