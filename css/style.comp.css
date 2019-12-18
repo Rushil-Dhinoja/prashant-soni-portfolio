@@ -162,7 +162,7 @@ body {
       height: 250px; } }
   @media only screen and (max-width: 40.625em) {
     .image-container {
-      height: 350px;
+      height: 400px;
       grid-row: 1/2; } }
   .image-container:hover .image-container--left {
     transform: translateY(0); }
